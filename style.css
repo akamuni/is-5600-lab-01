@@ -85,7 +85,7 @@ header div a {
      background-color: #8662c7;
  }
 
- /* Note we can use the .card class selector here, as a class has been assigned to the <section> elements. */
+ /* Note we can use the .card class selector here, as a class has been assigned to the <section> elements. 
 .card {
    float: left;
    display: inline-block;
@@ -93,6 +93,28 @@ header div a {
    margin: 10px 5px;
    background-color: white;
  }
+
+ */
+
+
+ /* refactor using the flexbox element */
+
+ main {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 15px;
+   padding: 10px;
+ }
+
+ .card {
+   flex: 1 1 calc(33.33% - 20px);
+   display: flex;
+   flex-direction: column;
+   background-color: white;
+ }
+
+ 
+
 
  .card div {
    padding: 20px 5px;
